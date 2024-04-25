@@ -74,7 +74,7 @@ if st.button("Predict"):
     <style>
     .result-container {
         background-color: #F6F9E9; /* Green background */
-        color: white; /* White text */
+        color: black; /* White text */
         padding: 15px;
         border-radius: 5px;
         box-shadow: 2px 2px 10px #888888;
