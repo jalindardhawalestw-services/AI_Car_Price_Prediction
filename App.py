@@ -70,4 +70,16 @@ if st.button("Predict"):
 
     car_price = model.predict(input_data_model)
 
-    st.markdown('Car Price is going to be ₹ '+ str(car_price[0]))
+    st.markdown("""
+    <style>
+    .result-container {
+        background-color: #F6F9E9; /* Green background */
+        color: white; /* White text */
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 10px #888888;
+        transition: background-color 0.5s ease;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+    st.markdown(f'<div class="result-container">Car Price is going to be ₹ {car_price[0]}</div>', unsafe_allow_html=True)
